@@ -1,0 +1,87 @@
+body {
+	font-family: Arial, sans-serif;
+   
+}
+
+h1 {
+	text-align: center;
+
+}
+.selection{
+    color: rgb(244, 241, 241);
+    background-color: rgb(39, 140, 16);
+	font-size: large;
+}
+form {
+	margin: 20px auto;
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+    color: black;
+}
+
+form label {
+	flex-basis: 30%;
+    color: white; 
+}
+
+form select,
+form input[type="number"],
+form input[type="text"] {
+	flex-basis: 65%;
+    color: rgb(252, 251, 251);
+}
+
+form button {
+	justify-content: center;
+	flex-basis: 30%;
+	margin-top: 20px;
+    color: black;
+	margin: 20px auto;
+	display: block;
+}
+
+#workout-recommendation {
+	margin: 40px auto;
+	width: 50%;
+	max-width: 400px;
+    color: black;
+}
+
+#workout-recommendation p {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-align: center;
+    color: white;
+}
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+select {
+	margin-bottom: 20px;
+}
+
+button {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+.workout-box {
+    border: 1px solid #ccc;
+    background-color: #3e8e41;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}

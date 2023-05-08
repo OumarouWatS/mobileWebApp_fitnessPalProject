@@ -1,0 +1,37 @@
+
+table, img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mytable {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #1a5a0e;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  font-size: large;
+ 
+}
+
+th {
+  font-weight: bold;
+  background-color: #0e0e0e;
+}
+
+tr:nth-child(even) {
+  background-color: #175d08;
+}
+
+tr:hover {
+  background-color: #1f8f10;
+}

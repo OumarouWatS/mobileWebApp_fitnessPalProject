@@ -1,0 +1,12 @@
+ /* Create a container to center the videos */
+ .videoC {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Add a gap of 20 pixels between the videos */
+}
+
+/* Add some margin to the videos to create some space */
+video {
+  margin: 10px;
+}

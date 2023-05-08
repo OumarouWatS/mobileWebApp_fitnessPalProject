@@ -1,0 +1,339 @@
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  /* Hide all slides except the first one */
+  .mySlides:not(:first-child) {
+	display: none;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  
+/*banner Images */  
+.white_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 650px;
+	background-color: #0b0505;
+	display: none;
+	z-index: 2000;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.black_content {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: .70;
+	z-index: 1;
+}
+
+.close {
+    position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	color: #5cda36;
+	text-decoration: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: url(signLogin.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 500px;
+    position:absolute;
+    left: 35%;
+    right: 50%;
+    margin: 3% auto;
+    background: #0c0707;
+    padding: 1px; 
+    overflow: hidden;
+
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position:absolute;
+    left: 20%; 
+    box-shadow: 0 0 20px 9px rgb(33, 143, 8);
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+     background: transparent;
+     border: 0;
+     outline: none;
+     position: relative;
+     color: rgb(248, 243, 243);
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background:linear-gradient(to right, #118411, #19140c89);
+    border-radius: 30px;
+    transition: .5s; 
+
+}
+
+.input-group
+{
+    top: 180px; 
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    text-transform:none; 
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #faf7f7;
+    outline: none;
+    background: transparent;
+    text-transform:none; 
+
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #118411, #19140c89);
+    border: 0;
+    outline:none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color:#f5f2f2;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+
+}
+#login{
+    left:50px;
+}
+#signup{
+    left:450px; 
+}
+
+ /* Create a container to center the videos */
+ .videoC {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px; /* Add a gap of 20 pixels between the videos */
+  }
+  
+  /* Add some margin to the videos to create some space */
+  video {
+	margin: 10px;
+  }
+  
+
+  /*Profile Card*/
+  .profileCard {
+	position: relative;
+    border: 5px solid #389221; 
+    padding: 10px;
+    width: 300px;
+    float: left;  
+    margin-right: 20px; 
+	margin-left: 50px;
+}
+.favoriteWorkouts {
+	flex-basis: 30%;
+	border: 5px solid #389221; 
+    padding: 10px;
+    width: 766px;
+    float: left;  
+    margin-right: 20px; 
+	margin-left: 50px;
+  }
+
+/*Setting */
+.setting {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: xx-large;
+	background-color: #0b050500;
+  }
+  /*setting Popup*/
+  .popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	background-color: #28521d; 
+	padding: 20px;
+	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+	display: none;
+  }
+  
+  .showPopup {
+	display: block;
+  }
+  
+  .closePopup {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	background-color: transparent;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  
+  input[type="file"] {
+	width: 200px;
+	height: 30px;
+	background-color: #363333;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 16px;
+	color: #fdfdfd;
+  }
+  .infoProfile{
+	background-color: rgba(0, 0, 0, 0);
+	color: #5cda36;
+	font-size:medium;
+
+  }
+  
+  .form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+  }
+  
+  .form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .form input[type="submit"]:hover {
+    background-color: #2E8B57;
+  }
+  
